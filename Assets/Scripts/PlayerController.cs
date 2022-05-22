@@ -19,15 +19,11 @@ public class PlayerController : MonoBehaviour
         if (transform.position.x > xrange)
         {
             transform.position = new Vector3(xrange,transform.position.y, transform.position.z);
-            // horizontalInput = Input.GetAxis("Horizontal");
-            // transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * slidespeed);
         }
 
         else if(transform.position.x < -xrange)
         {
             transform.position = new Vector3(-xrange,transform.position.y, transform.position.z);
-            // horizontalInput = Input.GetAxis("Horizontal");
-            // transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * slidespeed);
         }
 
         else
