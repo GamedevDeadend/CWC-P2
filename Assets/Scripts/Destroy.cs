@@ -7,10 +7,10 @@ public class Destroy : MonoBehaviour
     public float upbound;
     public float lowerbound;
 
-   // Start is called before the first frame update
+    // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -21,9 +21,10 @@ public class Destroy : MonoBehaviour
             Destroy(gameObject);
         }
 
-        else if ( transform.position.z < lowerbound)
+        else if (transform.position.z < lowerbound)
         {
             Destroy(gameObject);
+            Debug.Log("GAME OVER!!");
         }
     }
 }
