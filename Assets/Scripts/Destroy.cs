@@ -5,7 +5,9 @@ using UnityEngine;
 public class Destroy : MonoBehaviour
 {
     public float upbound;
-    // Start is called before the first frame update
+    public float lowerbound;
+
+   // Start is called before the first frame update
     void Start()
     {
         
@@ -15,6 +17,11 @@ public class Destroy : MonoBehaviour
     void Update()
     {
         if (transform.position.z > upbound)
+        {
+            Destroy(gameObject);
+        }
+
+        else if ( transform.position.z < lowerbound)
         {
             Destroy(gameObject);
         }
